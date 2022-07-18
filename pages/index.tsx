@@ -3,10 +3,11 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Work from "../components/Work";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>ParraCode</title>
         <link rel="icon" href="/PC1.png"></link>
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Header />
       <Work />
+      <Contact />
     </div>
   );
 };

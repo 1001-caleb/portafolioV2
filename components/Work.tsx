@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Work() {
 
-   const works = [
+    const works = [
         {
             id: 1,
             img: 'project1',
@@ -18,16 +18,20 @@ function Work() {
             desc: '',
             link: ''
         }
-   ]
+    ]
 
-  return (
-    <section>
-        <h3 className='text-white text-4xl lg:text-7xl text-center mt-20'>WORK</h3>
-        <div>
-            
-        </div>
-    </section>
-  )
+    return (
+
+        <>
+            <div className='p-5 '>
+                <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>WORK</h3>
+                <div>
+
+                </div>
+            </div>
+        </>
+
+    )
 }
 
 export default Work
