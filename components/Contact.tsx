@@ -34,12 +34,12 @@ function Contact() {
         <>
             <div className='p-5 text-center'>
 
-                <h3 className="text-white text-4xl lg:text-7xl mt-20 mb-10">CONTACT</h3>
+                <h3 className="text-white text-4xl lg:text-7xl mt-20 mb-10">Conctact</h3>
                 <a href='mailto:parra.code7@gmail.com' >
-                    <p className='text-white text-xl lg:text-4xl  '>Send me a mail</p>
+                    <p className='text-white text-xl lg:text-4xl  hover:text-cyan-500'>Send me a mail</p>
                 </a>
                 <a href='https://parra.vercel.app' >
-                    <p className='text-gray-400 text-xl lg:text-4xl  '>or my another social media</p>
+                    <p className='text-gray-400 text-xl lg:text-4xl hover:text-cyan-500 '>or my another social media</p>
                 </a>
 
                 <div className="flex flex-wrap gap-5 justify-center mt-10">
@@ -47,7 +47,7 @@ function Contact() {
                         links.map(link => {
                             return (
                                 <a href={link.link} key={link.id} className='' >
-                                    <p className='text-gray-400 text-xl lg:text-4xl  '>{link.title}</p>
+                                    <p className='text-gray-400 text-xl lg:text-4xl hover:text-violet-600  '>{link.title}</p>
                                 </a>
                             )
                         })

@@ -24,7 +24,7 @@ function Work() {
 
         <>
             <div className='p-5 '>
-                <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>WORK</h3>
+                <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Work</h3>
                 <div>
 
                 </div>

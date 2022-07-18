@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Work from "../components/Work";
+import Services from '../components/Services'
 import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Header />
       <Work />
+      <Services />
       <Contact />
     </div>
   );
