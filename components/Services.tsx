@@ -6,7 +6,7 @@ function Services() {
             id: 1,
             title: 'Figma designs',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur ',
-            price: '$$'
+            price: '$ 100'
         },
         {
             id: 2,
@@ -36,14 +36,21 @@ function Services() {
                 <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Services</h3>
                 <div className='flex flex-wrap lg:flex-nowrap gap-5 mt-10'>
                     {
-                        services.map(service =>{
-                            return(
-                                <div className='bg-white w-max h-70 p-10'> 
-                                    <h3 className='text-2xl mb-5'>{service.title}</h3>
-                                    <p className=''>{service.desc}</p>
-                                    <p className='bg-cyan-500 absolute object-bottom'>{service.price}</p>
-                                </div>
-                            ) 
+                        services.map(service => {
+                            return (
+                                <>
+                                    <div className='bg-white w-max h-50  relative'>
+                                        <div className="p-10">
+                                            <h3 className='text-2xl mb-5'>{service.title}</h3>
+                                            <p className=''>{service.desc}</p>
+                                        </div>
+                                        
+                                        <p className='bg-blue-500 absolute w-full bottom-0 text-white px-10 py-1'>{service.price}</p>
+
+                                    </div>
+                                </>
+
+                            )
                         })
                     }
                 </div>
