@@ -23,7 +23,7 @@ function Work() {
     return (
 
         <>
-            <div className='p-5 '>
+            <div id='work' className='p-5 '>
                 <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Work</h3>
                 <div>
 

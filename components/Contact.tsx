@@ -32,7 +32,7 @@ function Contact() {
 
     return (
         <>
-            <div className='p-5 text-center'>
+            <div id="contact" className='p-5 text-center'>
 
                 <h3 className="text-white text-4xl lg:text-7xl mt-20 mb-10">Conctact</h3>
                 <a href='mailto:parra.code7@gmail.com' >

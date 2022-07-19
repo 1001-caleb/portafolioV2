@@ -8,7 +8,7 @@ import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden scroll-smooth ">
       <Head>
         <title>ParraCode</title>
         <link rel="icon" href="/PC1.png"></link>

@@ -12,19 +12,19 @@ function Services() {
             id: 2,
             title: 'Web design',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur ',
-            price: '$$'
+            price: '$ 100'
         },
         {
             id: 3,
             title: 'Discord bot development',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur ',
-            price: '$$'
+            price: '$ 100'
         },
         {
             id: 4,
             title: 'Mentoring',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur ',
-            price: '$$'
+            price: '$ 100'
         },
 
 
@@ -32,7 +32,7 @@ function Services() {
 
     return (
         <>
-            <div className='p-5 '>
+            <div id="service" className='p-5 '>
                 <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Services</h3>
                 <div className='flex flex-wrap lg:flex-nowrap gap-5 mt-10'>
                     {
