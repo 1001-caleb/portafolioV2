@@ -12,3 +12,23 @@ body {
   background-color: black;
   scroll-behavior: smooth;
 }
+
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(147 51 234) #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(147 51 234);
+    border-radius: 10px;
+  }
