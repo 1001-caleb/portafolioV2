@@ -2,7 +2,7 @@
 
 function Header() {
     return (
-        <section className='w-screen p-5 '>
+        <section className='w-screen p-5 mt-20'>
             <h1 className=' text-white text-5xl lg:text-9xl font-semibold  text-center'>
                 Creative <br />
                 Innovative <br />

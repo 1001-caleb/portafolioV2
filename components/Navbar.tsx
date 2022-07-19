@@ -12,9 +12,9 @@ const Header = () => {
     };
     return (
         <>
-            <nav className='flex items-center flex-wrap p-3 '>
+            <nav className='fixed w-full flex items-center flex-wrap p-3 h-20 z-10'>
 
-                <a className='inline-flex items-center p-2 mr-4 '>
+                <a className='inline-flex items-center p-2 '>
                     <Image src={Logo}></Image>
                 </a>
 
