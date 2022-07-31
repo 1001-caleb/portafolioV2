@@ -39,7 +39,7 @@ function Services() {
                         services.map(service => {
                             return (
                                 <>
-                                    <div className='bg-white w-max h-50  relative'>
+                                    <div key={service.id} className='bg-white w-50 h-50  relative'>
                                         <div className="p-10">
                                             <h3 className='text-2xl mb-5'>{service.title}</h3>
                                             <p className=''>{service.desc}</p>
