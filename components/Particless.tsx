@@ -9,12 +9,7 @@ import { loadOpacityUpdater } from "tsparticles-updater-opacity";
 import { loadOutModesUpdater } from "tsparticles-updater-out-modes";
 
 const Particless = (props: unknown) =>{
-    (async () => {
-        await loadFull(tsParticles);
 
-        await tsParticles.load("tsparticles", { /* options */ });
-
-    })();
     async function particlesInit(engine: any) {
         await loadColorUpdater(engine);
         await loadCircleShape(engine);
