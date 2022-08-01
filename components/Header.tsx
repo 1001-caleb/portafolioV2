@@ -1,11 +1,9 @@
-import Particles from 'react-particles';
 
 function Header() {
+
     return (
-        <section className='w-screen h-screen p-5  grid place-items-center'>
+        <section className='w-screen h-screen p-5  grid place-items-center z-10'>
             <div>
-                <Particles 
-                />
                 <h1 className=' text-white text-5xl lg:text-9xl font-semibold  text-center'>
                     Creative <br />
                     Innovative <br />

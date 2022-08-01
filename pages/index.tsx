@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Work from "../components/Work";
 import Services from '../components/Services'
 import Contact from "../components/Contact";
+import Particless from '../components/Particless';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Work />
       <Services />
       <Contact />
+      <Particless />
     </div>
   );
 };
