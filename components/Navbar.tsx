@@ -2,7 +2,7 @@ import Image from "next/image"
 import Logo from '../public/Logo.png'
 import Link from "next/link"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Header = () => {
     const [active, setActive] = useState(false);
@@ -19,7 +19,11 @@ const Header = () => {
             setColorchange(false);
         }
     };
-    window.addEventListener('scroll', changeNavbarColor);
+    useEffect(() =>{
+        window.addEventListener('scroll', changeNavbarColor);
+        return () => window.removeEventListener('scroll', changeNavbarColor);
+    }, []);
+    
     return (
         <>
             <nav className={colorChange ? 'fixed w-full flex items-center flex-wrap p-3 h-20 z-10 bg-black  bg-opacity-30 backdrop-blur-sm max-h-[40rem '

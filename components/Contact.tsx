@@ -9,7 +9,7 @@ function Contact() {
         },
         {
             id: 2,
-            title: 'Linkdind',
+            title: 'Linkdin',
             link: 'https://www.linkedin.com/in/caleb-parra/'
         },
         {
@@ -39,7 +39,7 @@ function Contact() {
                     <p className='text-white text-xl lg:text-4xl  hover:text-cyan-500'>Send me a mail</p>
                 </a>
                 <a href='https://parra.vercel.app' >
-                    <p className='text-gray-400 text-xl lg:text-4xl hover:text-cyan-500 '>or my another social media</p>
+                    <p className='text-gray-400 text-xl lg:text-4xl hover:text-cyan-500 '>my another social media</p>
                 </a>
 
                 <div className="flex flex-wrap gap-5 justify-center mt-10">
