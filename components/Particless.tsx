@@ -11,6 +11,8 @@ import { loadOutModesUpdater } from "tsparticles-updater-out-modes";
 const Particless = (props: unknown) =>{
 
     async function particlesInit(engine: any) {
+        await loadFull(tsParticles);
+        await tsParticles.load('tsparticles')
         await loadColorUpdater(engine);
         await loadCircleShape(engine);
         await loadBaseMover(engine);

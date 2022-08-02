@@ -38,17 +38,17 @@ function Services() {
                     {
                         services.map(service => {
                             return (
-                                <>
-                                    <div key={service.id} className='bg-white w-50 h-50  relative'>
-                                        <div className="p-10">
-                                            <h3 className='text-2xl mb-5'>{service.title}</h3>
-                                            <p className=''>{service.desc}</p>
-                                        </div>
-                                        
-                                        <p className='bg-blue-500 absolute w-full bottom-0 text-white px-10 py-1'>{service.price}</p>
 
+                                <div key={service.id} className='bg-white w-50 h-50  relative'>
+                                    <div className="p-10">
+                                        <h3 className='text-2xl mb-5'>{service.title}</h3>
+                                        <p className=''>{service.desc}</p>
                                     </div>
-                                </>
+
+                                    <p className='bg-blue-500 absolute w-full bottom-0 text-white px-10 py-1'>{service.price}</p>
+
+                                </div>
+
 
                             )
                         })
