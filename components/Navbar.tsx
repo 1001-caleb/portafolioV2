@@ -6,13 +6,24 @@ import { useState } from "react"
 
 const Header = () => {
     const [active, setActive] = useState(false);
+    const [colorChange, setColorchange] = useState(false);
 
     const handleClick = () => {
         setActive(!active);
     };
+
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setColorchange(true);
+        } else {
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
         <>
-            <nav className='fixed w-full flex items-center flex-wrap p-3 h-20 z-10'>
+            <nav className={colorChange ? 'fixed w-full flex items-center flex-wrap p-3 h-20 z-10 bg-black  bg-opacity-30 backdrop-blur-sm max-h-[40rem '
+                : 'fixed w-full flex items-center flex-wrap p-3 h-20 z-10 '}>
 
                 <a className='inline-flex items-center p-2 '>
                     <Image src={Logo}></Image>

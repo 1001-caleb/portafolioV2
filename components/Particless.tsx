@@ -34,10 +34,7 @@ const Particless = (props: unknown) =>{
                },
             interactivity: {
                 events: {
-                  onClick: {
-                    enable: true, 
-                    mode: "push", 
-                  },
+
                   onHover: {
                     enable: true, 
                     mode: "repulse", 
