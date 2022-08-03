@@ -1,26 +1,16 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import image1 from '../public/img1.png'
+import { useEffect, useState } from "react";
+import Projects from "../data/data";
 
 function Work() {
+    const [projects, setProjects] = useState<typeof Projects[]>([]);
 
-    const works = [
-        {
-            id: 1,
-            img: 'project1',
-            title: '',
-            desc: '',
-            link: ''
-        },
-        {
-            id: 2,
-            img: '',
-            title: '',
-            desc: '',
-            link: ''
-        }
-    ]
-
+    useEffect(() => {
+        fetch('/api/projects')
+        .then(res => res.json())
+        .then((projects: typeof Projects[]) => setProjects(projects));
+        console.log(projects);
+    }, []);
+    
     return (
 
         <>
