@@ -1,23 +1,43 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Projects from "../data/data";
 
+
 function Work() {
-    const [projects, setProjects] = useState<typeof Projects[]>([]);
+    type Data = {
+        id: number,
+        name: string,
+        description: string,
+    }
+
+    const [projects, setProjects] = useState<Data[]>([]);
 
     useEffect(() => {
         fetch('/api/projects')
-        .then(res => res.json())
-        .then((projects: typeof Projects[]) => setProjects(projects));
-        console.log(projects);
-    }, []);
-    
-    return (
+            .then(res => res.json())
+            .then((projects: Data[]) => setProjects(projects));
 
-        <>
-            <div id='work' className='p-5 relative '>
-                <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Work</h3>
-            </div>
-        </>
+    }, []);
+
+    return (
+        <div id='work' className='p-5 relative '>
+            <h3 className='text-white text-4xl lg:text-7xl text-center mt-20 '>Work</h3>
+            {
+                projects.map(project => {
+                    return (
+                        <Link key={project.id} href={{
+                            pathname: '/projects/[name]',
+                            query: { name: project.name }
+                        }}>
+                            <div >
+                                <h4 className="text-white">{project.name}</h4>
+                            </div>
+                        </Link>
+
+                    )
+                })
+            }
+        </div>
 
     )
 }

@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import nc from "next-connect";
 import Projects from "../../../data/data";
 
-const getProjects = (id: any) => Projects.find((n) => n.id === parseInt(id));
+const getProjects = (name: any) => Projects.find((n) => n.name ===name);
 
 const handler = nc<NextApiRequest, NextApiResponse>().get((req, res) => {
   const project = getProjects(req.query.project);
