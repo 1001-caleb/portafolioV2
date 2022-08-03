@@ -17,7 +17,7 @@ export default function Project(projects: any) {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch('http://localhost:3000/api/projects');
+    const res = await fetch('https://portafolio-parra.vercel.app/api/projects');
     const projects = await res.json();
     const paths = projects.map((project: any) => ({
         params: { name: project.name }
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: any) {
     const { name } = await context.params;
 
-    const res = await fetch(`http://localhost:3000/api/projects/${name}`);
+    const res = await fetch(`https://portafolio-parra.vercel.app/api/projects/${name}`);
     const projects = await res.json();
     console.log(projects);
     return {
