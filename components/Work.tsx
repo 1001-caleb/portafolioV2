@@ -29,9 +29,12 @@ function Work() {
                             pathname: '/projects/[name]',
                             query: { name: project.name }
                         }}>
-                            <div >
-                                <h4 className="text-white">{project.name}</h4>
-                            </div>
+                            <a>
+                                <div >
+                                    <h4 className="text-white">{project.name}</h4>
+                                </div>
+                            </a>
+                           
                         </Link>
 
                     )

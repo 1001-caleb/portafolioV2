@@ -34,7 +34,7 @@ function Contact() {
         <>
             <div id="contact" className='p-5 text-center'>
 
-                <h3 className="text-white text-4xl lg:text-7xl mt-20 mb-10">Conctact</h3>
+                <h3 className="text-white text-4xl lg:text-7xl mt-20 mb-10">Contact</h3>
                 <a href='mailto:parra.code7@gmail.com' >
                     <p className='text-white text-xl lg:text-4xl  hover:text-cyan-500'>Send me a mail</p>
                 </a>
