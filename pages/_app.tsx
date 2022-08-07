@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     router.push('/');
-  }, [router.events]);
+  }, []);
 
   useEffect(() => {
     router.events.on('routeChangeStart', () => {
