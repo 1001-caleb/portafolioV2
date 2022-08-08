@@ -25,12 +25,10 @@ const Particless = (props: unknown) =>{
         <Particles  init={particlesInit}
         options={{
             fpsLimit: 120,
-            background: {
-                color: "#000"
-            },
+          
              fullScreen: {
                  enable: true, 
-                 zIndex: -1, 
+                 zIndex: 1, 
                },
             interactivity: {
                 events: {
