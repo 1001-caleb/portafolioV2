@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 /* Firefox */

@@ -9,7 +9,7 @@ import Particless from '../components/Particless';
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-hidden scroll-smooth bg-black ">
+    <div className="overflow-hidden scroll-smooth  ">
       <Head>
         <title>ParraCode</title>
         <link rel="icon" href="/PC1.png"></link>
